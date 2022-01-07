@@ -31,11 +31,41 @@ Selenium provides support for these 8 traditional location strategies in WebDriv
 | tag name          | Locates elements whose tag name matches the search value |
 | xpath             | Locates elements matching an XPath expression |
 
+### class name
+{{< tabpane langEqualsHeader=true >}}
+{{< tab header="Java" >}}
+By classLocator = locateWith.with(By.tagName("big-red-button"));
+{{< /tab >}}
+{{< tab header="Python" >}}
+email_locator = locate_with(By.CLASS_NAME, "big-red-button")
+{{< /tab >}}
+{{< tab header="CSharp" >}}
+var classLocator = WithLocator(By.ClassName("big-red-button"));
+{{< /tab >}}
+{{< tab header="Ruby" >}}
+email_locator = {class_name: 'input'}
+{{< /tab >}}
+{{< tab header="JavaScript" >}}
+let classLocator = locateWith(By.className('big-red-button'));
+{{< /tab >}}
+{{< tab header="Kotlin" >}}
+val classLocator = Locator.with(By.classgName("big-red-button"))
+{{< /tab >}}
+{{< /tabpane >}}
 
-{{% pageinfo color="warning" %}}
-Coming soon:
-* Examples of selecting elements from HTML using each locator strategy
-{{% /pageinfo %}}
+### css selector
+
+### id
+
+### name
+
+### link text
+
+### partial link text
+
+### tag name
+
+### xpath
 
 ## Relative Locators
 
